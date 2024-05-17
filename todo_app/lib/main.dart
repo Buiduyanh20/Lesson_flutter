@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/ui/MHIntro/mhIntro.dart';
+
+import 'ui/Welcome/mhWelcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const mhIntro(),
+      home: const mhWelcome(),
     );
   }
 }
