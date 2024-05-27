@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'ui/Welcome/mhWelcome.dart';
+import 'package:todo_app/Screens/Home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const mhWelcome(),
+      home: NoteListScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
